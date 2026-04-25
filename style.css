@@ -18,6 +18,12 @@ p{
     text-align: center;
 }
 
+#menubar a{
+    text-decoration: none;
+}
+#menubar a:hover{
+    color: #ffc0cb; 
+}
 #menubar{
     background-color: #e6e6fa;
     margin: auto;
