@@ -2,10 +2,10 @@
 echo "Nama : Naila Binti Fauziah<br>";
 echo "NIM  : 202457201056<br>";
 echo "Prodi/semester : Sistem Informasi(4)<br>";
-echo "----------------------------------------";
+echo "<hr>";
 echo "<br>";
 //array asosiatif pada pasien
-echo "<b>-=-=-=-=-Array Data Pasien-=-=-=-=-</b><br>";
+echo "<b>=====================Array Data Pasien=========================</b><br>";
 $pasien = [
     "Nama" => "Andi Wijaya",
     "Usia" => 40,
@@ -23,18 +23,52 @@ echo "Dokter : ", $pasien["Dokter"],"<br/>";
 echo "Biaya : ", $pasien["Biaya"],"<br/>";
 
 echo "<br>";
-echo "<b>-=-=-=-=-Tugas 1 Funngsi Pengurutan-=-=-=-=-</b><br>";
+echo "<b>-=-=-=-=-=-=-=-=-=Tugas 1 Fungsi Pengurutan-=-=-=-=-=-=-=-=-=</b><br>";
 //sort()
-sort($pasien);
-print_r($pasien);
+$data1 = $pasien;
+sort($data1);
+echo "<b>1. sort()</b><br>";
+print_r($data1);
 echo "<br>";
+//rsort()
+$data2 = $pasien;
+rsort($data2);
+echo "<b>2. rsort()</b><br>";
+print_r($data2);
+echo "<br>";
+//asort()
+$data3 = $pasien;
+asort($data3);
+echo "<b>3. asort()</b><br>";
+print_r($data3);
+echo "<br>";
+//arsort()
+$data4 = $pasien;
+arsort($data4);
+echo "<b>4. arsort()</b><br>";
+print_r($data4);
+echo "<br>";
+//ksort()
+$data5 = $pasien;
+ksort($data5);
+echo "<b>5. ksort()</b><br>";
+print_r($data5);
+echo "<br>";
+//krsort()
+$data6 = $pasien;
+krsort($data6);
+echo "<b>6. krsort()</b><br>";
+print_r($data6);
+echo "<br><br>";
+
 
 echo "<br>";
-echo "<b>-=-=-=-=-Tugas 2 Fungsi Array (5)-=-=-=-=-</b><br>";
+echo "<b>-=-=-=-=-=-=-=-Tugas 2 Fungsi Array (5)-=-=-=-=-=-=-=-=-=-=-=-</b><br>";
 //1. array_pop()
-array_pop($pasien);
+$pasien_pop = $pasien;
+array_pop($pasien_pop);
 echo "<b>1. Array_pop() untuk menghapus data akhir :</b><br>";
-print_r($pasien);
+print_r($pasien_pop);
 echo "<br>";
 echo "<br>";
 //2. array_reverse()
